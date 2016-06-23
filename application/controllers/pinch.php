@@ -75,6 +75,7 @@ class Pinch extends CI_Controller {
 	{
 		$this->load->view('pinch/feedback');
 	}
+	
 	public function send_feedback()
 	{
 		$email = $_REQUEST['email'];
@@ -125,7 +126,6 @@ class Pinch extends CI_Controller {
 	{
 		$this->load->view('pinch/share');
 	}
-	
 	
 	public function ads_request()
 	{
