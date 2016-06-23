@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Hotel List</title>
+		<!-- Font Google -->
+		<link href="css/css.css" rel="stylesheet" type="text/css">
+		<!-- End Font Google -->
+		<!-- Library CSS -->
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" href="css/owl.css">
+		<!-- End Library CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<script style="" src="js/common.js" charset="UTF-8" type="text/javascript"></script><script src="js/util.js" charset="UTF-8" type="text/javascript"></script><script src="js/stats.js" charset="UTF-8" type="text/javascript"></script><script src="js/AuthenticationService.Authenticate" charset="UTF-8" type="text/javascript"></script>
+	</head>
+	<body class="hotel">
+		<!-- Preloader -->
+		<div style="display: none;" id="preloader">
+			<div class="tb-cell">
+				<div id="page-loading">
+					<div></div>
+					<p>Loading</p>
+				</div>
+			</div>
+		</div>
+		<!-- Wrap -->
+		<div id="wrap">
+			<!-- Header -->
+			<header style="background-color: rgb(255, 255, 255);" id="header" class="header">
+				<div class="container">
+					<!-- Logo -->
+					<div style="opacity: 1; visibility: visible;" class="logo float-left">
+						<a href="index.html" title=""><img src="images/logo-header.png" alt=""></a>
+					</div>
+					<!-- End Logo -->
+					<!-- Bars -->
+					<div style="display: none;" class="bars" id="bars"></div>
+					<!-- End Bars -->
+					<!--Navigation-->
+					<nav class="navigation nav-c nav-desktop" id="navigation" data-menu-type="1200">
+						<div class="nav-inner">
+							<a style="display: none;" href="#" class="bars-close" id="bars-close">Close</a>
+							<div class="tb">
+								<div class="tb-cell">
+									<ul class="menu-list text-uppercase">
+										<li class="menu-parent">
+											<a href="index.html" title="">Home</a>
+											<ul class="sub-menu">
+												<li><a href="index.html" title="">Home menu 1</a></li>
+												<li><a href="index2.html" title="">Home menu 2</a></li>
+												<li><a href="index3.html" title="">Home menu 3</a></li>
+												<li><a href="index4.html" title="">Home menu 4</a></li>
+											</ul>
+										</li>
+										<li class="menu-parent">
+											<a href="#">Pages</a>
+											<ul class="sub-menu">
+												<li class="menu-parent">
+													<a href="#" title="">Blog</a>
+													<ul class="sub-menu">
+														<li>
+															<a href="blog.html" title="">Blog</a>
+														</li>
+														<li>
+															<a href="blog-detail.html">Blog Detail</a>
+														</li>
+													</ul>
+												</li>
+												<li><a href="about.html" title="">About</a></li>
+												<li><a href="contact.html" title="">Contact</a></li>
+												<li><a href="payment.html" title="">Payment</a></li>
+												<li><a href="element.html" title="">Element</a></li>
+												<li><a href="404.html" title="">404</a></li>
+												<li><a href="comingsoon.html" title="">Comingsoon</a></li>
+											</ul>
+										</li>
+										<li class="current-menu-parent menu-parent">
+											<a href="#" title="">Hotel</a>
+											<ul class="sub-menu">
+												<li>
+													<a href="home-hotel.html" title="">Hotel</a>
+												</li>
+												<li class="current-menu-item">
+													<a href="hotel-list.html">Hotel List 1</a>
+												</li>
+												<li>
+													<a href="hotel-list-2.html">Hotel List 2</a>
+												</li>
+												<li>
+													<a href="hotel-maps.html">Hotel Map</a>
+												</li>
+												<li>
+													<a href="hotel-detail.html">Hotel Detail</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-parent">
+											<a href="#" title="">Flights</a>
+											<ul class="sub-menu">
+												<li>
+													<a href="home-flight.html" title="">Flights</a>
+												</li>
+												<li>
+													<a href="flight-list.html">Flight List</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-parent">
+											<a href="#" title="">Car</a>
+											<ul class="sub-menu">
+												<li>
+													<a href="home-car.html" title="">Car</a>
+												</li>
+												<li>
+													<a href="car-list.html">Cart List</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-parent">
+											<a href="#" title="">Package</a>
+											<ul class="sub-menu">
+												<li>
+													<a href="home-package.html" title="">Package Deals</a>
+												</li>
+												<li>
+													<a href="package-list.html">Package Deals List</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-parent">
+											<a href="#" title="">Cruises</a>
+											<ul class="sub-menu right">
+												<li>
+													<a href="home-cruise.html" title="">Cruises</a>
+												</li>
+												<li>
+													<a href="cruise-list.html">Cruise List</a>
+												</li>
+												<li>
+													<a href="cruise-detail.html">Cruise Detail</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-parent">
+											<a href="#" title="">Tours</a>
+											<ul class="sub-menu right">
+												<li>
+													<a href="home-tour.html" title="">Tours</a>
+												</li>
+												<li>
+													<a href="tour-list.html">Tour List</a>
+												</li>
+												<li>
+													<a href="tour-detail.html">Tour Detail</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</nav>
+					<!--End Navigation-->
+				</div>
+			</header>
+			<!-- End Header -->
+			<!--Banner-->
+			<section style="margin-top: 82px;" class="sub-banner">
+				<!--Background-->
+				<div style="background-position: 50% 8px;" class="bg-parallax bg-1"></div>
+				<!--End Background-->
+				<!-- Logo -->
+				<div style="display: none;" class="logo-banner text-center">
+					<a href="" title="">
+					<img src="images/logo-banner.png" alt="">
+					</a>
+				</div>
+				<!-- Logo -->
+			</section>
+			<!--End Banner-->
+			<!-- Main -->
+			<div class="main">
+				<div class="container">
+					<div class="main-cn hotel-page bg-white">
+						<div class="row">
+							<!-- Hotel Right -->
+							<div class="col-md-9 col-md-push-3">
+								<!-- Breakcrumb -->
+								<section class="breakcrumb-sc">
+									<ul class="breadcrumb arrow">
+										<li><a href="index.html"><i class="fa fa-home"></i></a></li>
+										<li><a href="hotel.html" title="">Hotels</a></li>
+										<li><a href="#" title="">Europe </a></li>
+										<li>Netherlands</li>
+									</ul>
+								</section>
+								<!-- End Breakcrumb -->
+								<!-- Hotel List -->
+								<section class="hotel-list">
+									<!-- Sort by and View by -->
+									<div class="sort-view clearfix">
+										<!-- Sort by -->
+										<div class="sort-by float-left">
+											<label>Sort by: </label>
+											<div class="sort-select select float-left">
+												<span data-placeholder="Select">Star rating</span>
+												<select name="start">
+													<option value="1">Star rating</option>
+													<option selected="selected" value="1">Star rating 1</option>
+													<option value="1">Star rating 2</option>
+													<option value="1">Star rating 3</option>
+												</select>
+											</div>
+											<div class="sort-select select float-left">
+												<span data-placeholder="Select">Guest rating</span>
+												<select name="guest">
+													<option value="1">Guest rating</option>
+													<option selected="selected" value="1">Guest rating 1</option>
+													<option value="1">Guest rating 2</option>
+													<option value="1">Guest rating 3</option>
+												</select>
+											</div>
+											<div class="sort-select select float-left">
+												<span data-placeholder="Select">Pricing</span>
+												<select name="pricing">
+													<option value="1">Pricing</option>
+													<option selected="selected" value="1">Pricing</option>
+													<option value="1">Pricing</option>
+													<option value="1">Pricing</option>
+												</select>
+											</div>
+										</div>
+										<!-- End Sort by -->
+										<!-- View by -->
+										<div class="view-by float-right">
+											<ul>
+												<li><a href="hotel-list.html" title="" class="current"><img src="images/icon-grid.png" alt=""></a></li>
+												<li><a href="hotel-list-2.html" title=""><img src="images/icon-list.png" alt=""></a></li>
+												<li><a href="hotel-maps.html" title=""><img src="images/icon-map.png" alt=""></a></li>
+											</ul>
+										</div>
+										<!-- View by -->
+									</div>
+									<!-- End Sort by and View by -->
+									<!-- Hotel Grid Content-->
+									<div class="hotel-grid-cn clearfix">
+										<!-- Hotel Item -->
+										<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+											<div class="hotel-item">
+												<figure class="hotel-img">
+													<a href="hotel-detail.html" title="">
+													<img src="images/img-1.jpg" alt="">
+													</a>
+													<figcaption>
+														Save <span>30</span>%
+													</figcaption>
+												</figure>
+												<div class="hotel-text">
+													<div class="hotel-name">
+														<a href="hotel-detail.html" title="">Copley Square Hotel</a>
+													</div>
+													<div class="hotel-places">
+														<a href="" title="">Boston</a>,
+														<a href="" title="">Massachusetts</a>
+													</div>
+													<hr class="hr">
+													<div class="price-box">
+														<span class="price old-price">From</span>
+														<span class="price special-price">$175<small>/night</small></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- End Hotel Item -->
+										<!-- Hotel Item -->
+										<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+											<div class="hotel-item">
+												<figure class="hotel-img">
+													<a href="hotel-detail.html" title="">
+													<img src="images/img-2.jpg" alt="">
+													</a>
+													<figcaption>
+														Save <span>30</span>%
+													</figcaption>
+												</figure>
+												<div class="hotel-text">
+													<div class="hotel-name">
+														<a href="hotel-detail.html" title="">Grand Hotel Bagni Nuovi</a>
+													</div>
+													<div class="hotel-places">
+														<a href="" title="">Boston</a>,
+														<a href="" title="">Massachusetts</a>
+													</div>
+													<hr class="hr">
+													<div class="price-box">
+														<span class="price old-price">From</span>
+														<span class="price special-price">$175<small>/night</small></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- End Hotel Item -->
+										<!-- Hotel Item -->
+										<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+											<div class="hotel-item">
+												<figure class="hotel-img">
+													<a href="hotel-detail.html" title="">
+													<img src="images/img-6.jpg" alt="">
+													</a>
+													<figcaption>
+														Save <span>30</span>%
+													</figcaption>
+												</figure>
+												<div class="hotel-text">
+													<div class="hotel-name">
+														<a href="hotel-detail.html" title="">Melia White House Hotel</a>
+													</div>
+													<div class="hotel-places">
+														<a href="" title="">Boston</a>,
+														<a href="" title="">Massachusetts</a>
+													</div>
+													<hr class="hr">
+													<div class="price-box">
+														<span class="price old-price">From</span>
+														<span class="price special-price">$175<small>/night</small></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- End Hotel Item -->
+										<!-- Hotel Item -->
+										<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+											<div class="hotel-item">
+												<figure class="hotel-img">
+													<a href="hotel-detail.html" title="">
+													<img src="images/img-1.jpg" alt="">
+													</a>
+													<figcaption>
+														Save <span>30</span>%
+													</figcaption>
+												</figure>
+												<div class="hotel-text">
+													<div class="hotel-name">
+														<a href="hotel-detail.html" title="">A Hidden NYC Mystery Hotel</a>
+													</div>
+													<div class="hotel-places">
+														<a href="" title="">Boston</a>,
+														<a href="" title="">Massachusetts</a>
+													</div>
+													<hr class="hr">
+													<div class="price-box">
+														<span class="price old-price">From</span>
+														<span class="price special-price">$175<small>/night</small></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- End Hotel Item -->
+										<!-- Hotel Item -->
+										<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+											<div class="hotel-item">
+												<figure class="hotel-img">
+													<a href="hotel-detail.html" title="">
+													<img src="images/img-2.jpg" alt="">
+													</a>
+													<figcaption>
+														Save <span>30</span>%
+													</figcaption>
+												</figure>
+												<div class="hotel-text">
+													<div class="hotel-name">
+														<a href="hotel-detail.html" title="">Town Hall Hotel</a>
+													</div>
+													<div class="hotel-places">
+														<a href="" title="">Boston</a>,
+														<a href="" title="">Massachusetts</a>
+													</div>
+													<hr class="hr">
+													<div class="price-box">
+														<span class="price old-price">From</span>
+														<span class="price special-price">$175<small>/night</small></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- End Hotel Item -->
+										<!-- Hotel Item -->
+										<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+											<div class="hotel-item">
+												<figure class="hotel-img">
+													<a href="hotel-detail.html" title="">
+													<img src="images/img-6.jpg" alt="">
+													</a>
+													<figcaption>
+														Save <span>30</span>%
+													</figcaption>
+												</figure>
+												<div class="hotel-text">
+													<div class="hotel-name">
+														<a href="hotel-detail.html" title="">Melia White House Hotel</a>
+													</div>
+													<div class="hotel-places">
+														<a href="" title="">Boston</a>,
+														<a href="" title="">Massachusetts</a>
+													</div>
+													<hr class="hr">
+													<div class="price-box">
+														<span class="price old-price">From</span>
+														<span class="price special-price">$175<small>/night</small></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- End Hotel Item -->
+										<!-- Hotel Item -->
+										<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+											<div class="hotel-item">
+												<figure class="hotel-img">
+													<a href="hotel-detail.html" title="">
+													<img src="images/img-1.jpg" alt="">
+													</a>
+													<figcaption>
+														Save <span>30</span>%
+													</figcaption>
+												</figure>
+												<div class="hotel-text">
+													<div class="hotel-name">
+														<a href="hotel-detail.html" title="">Copley Square Hotel</a>
+													</div>
+													<div class="hotel-places">
+														<a href="" title="">Boston</a>,
+														<a href="" title="">Massachusetts</a>
+													</div>
+													<hr class="hr">
+													<div class="price-box">
+														<span class="price old-price">From</span>
+														<span class="price special-price">$175<small>/night</small></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- End Hotel Item -->
+										<!-- Hotel Item -->
+										<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+											<div class="hotel-item">
+												<figure class="hotel-img">
+													<a href="hotel-detail.html" title="">
+													<img src="images/img-2.jpg" alt="">
+													</a>
+													<figcaption>
+														Save <span>30</span>%
+													</figcaption>
+												</figure>
+												<div class="hotel-text">
+													<div class="hotel-name">
+														<a href="hotel-detail.html" title="">Grand Hotel Bagni Nuovi</a>
+													</div>
+													<div class="hotel-places">
+														<a href="" title="">Boston</a>,
+														<a href="" title="">Massachusetts</a>
+													</div>
+													<hr class="hr">
+													<div class="price-box">
+														<span class="price old-price">From</span>
+														<span class="price special-price">$175<small>/night</small></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- End Hotel Item -->
+										<!-- Hotel Item -->
+										<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+											<div class="hotel-item">
+												<figure class="hotel-img">
+													<a href="hotel-detail.html" title="">
+													<img src="images/img-6.jpg" alt="">
+													</a>
+													<figcaption>
+														Save <span>30</span>%
+													</figcaption>
+												</figure>
+												<div class="hotel-text">
+													<div class="hotel-name">
+														<a href="hotel-detail.html" title="">Melia White House Hotel</a>
+													</div>
+													<div class="hotel-places">
+														<a href="" title="">Boston</a>,
+														<a href="" title="">Massachusetts</a>
+													</div>
+													<hr class="hr">
+													<div class="price-box">
+														<span class="price old-price">From</span>
+														<span class="price special-price">$175<small>/night</small></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- End Hotel Item -->
+										<!-- Hotel Item -->
+										<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+											<div class="hotel-item">
+												<figure class="hotel-img">
+													<a href="hotel-detail.html" title="">
+													<img src="images/img-1.jpg" alt="">
+													</a>
+													<figcaption>
+														Save <span>30</span>%
+													</figcaption>
+												</figure>
+												<div class="hotel-text">
+													<div class="hotel-name">
+														<a href="hotel-detail.html" title="">A Hidden NYC Mystery Hotel</a>
+													</div>
+													<div class="hotel-places">
+														<a href="" title="">Boston</a>,
+														<a href="" title="">Massachusetts</a>
+													</div>
+													<hr class="hr">
+													<div class="price-box">
+														<span class="price old-price">From</span>
+														<span class="price special-price">$175<small>/night</small></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- End Hotel Item -->
+										<!-- Hotel Item -->
+										<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+											<div class="hotel-item">
+												<figure class="hotel-img">
+													<a href="hotel-detail.html" title="">
+													<img src="images/img-2.jpg" alt="">
+													</a>
+													<figcaption>
+														Save <span>30</span>%
+													</figcaption>
+												</figure>
+												<div class="hotel-text">
+													<div class="hotel-name">
+														<a href="hotel-detail.html" title="">Town Hall Hotel</a>
+													</div>
+													<div class="hotel-places">
+														<a href="" title="">Boston</a>,
+														<a href="" title="">Massachusetts</a>
+													</div>
+													<hr class="hr">
+													<div class="price-box">
+														<span class="price old-price">From</span>
+														<span class="price special-price">$175<small>/night</small></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- End Hotel Item -->
+										<!-- Hotel Item -->
+										<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+											<div class="hotel-item">
+												<figure class="hotel-img">
+													<a href="hotel-detail.html" title="">
+													<img src="images/img-6.jpg" alt="">
+													</a>
+													<figcaption>
+														Save <span>30</span>%
+													</figcaption>
+												</figure>
+												<div class="hotel-text">
+													<div class="hotel-name">
+														<a href="hotel-detail.html" title="">Melia White House Hotel</a>
+													</div>
+													<div class="hotel-places">
+														<a href="" title="">Boston</a>,
+														<a href="" title="">Massachusetts</a>
+													</div>
+													<hr class="hr">
+													<div class="price-box">
+														<span class="price old-price">From</span>
+														<span class="price special-price">$175<small>/night</small></span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- End Hotel Item -->
+									</div>
+									<!-- End Hotel Grid Content-->
+									<!-- Page Navigation -->
+									<div class="page-navigation-cn">
+										<ul class="page-navigation">
+											<!--<li class="first"><a href="" title="">First</a></li>-->
+											<li class="current"><a href="" title="">1</a></li>
+											<li><a href="" title="">2</a></li>
+											<li><a href="" title="">3</a></li>
+											<li><a href="" title="">4</a></li>
+											<li><a href="" title="">5</a></li>
+											<li><a href="" title="">...</a></li>
+											<li class="last"><a href="" title="">Last</a></li>
+										</ul>
+									</div>
+									<!-- Page Navigation -->
+								</section>
+								<!-- End Hotel List -->
+							</div>
+							<!-- End Hotel Right -->
+							<!-- Sidebar Hotel -->
+							<div class="col-md-3 col-md-pull-9">
+								<!-- Sidebar Content -->
+								<div class="sidebar-cn">
+									<!-- Search Result -->
+									<div class="search-result">
+										<p>
+											We found <br>
+											<ins>640</ins> <span>properties availability</span>
+										</p>
+									</div>
+									<!-- End Search Result -->
+									<!-- Search Form Sidebar -->
+									<div class="search-sidebar">
+										<div class="row">
+											<div class="form-search clearfix">
+												<div class="form-field col-md-12">
+													<label for="destination"><span>Destination:</span> Netherlands</label>
+													<input id="destination" class="field-input" type="text">
+												</div>
+												<div class="form-field field-date col-md-6">
+													<input id="dp1425557151675" class="field-input calendar-input hasDatepicker" placeholder="Check in" type="text">
+												</div>
+												<div class="form-field field-date col-md-6">
+													<input id="dp1425557151676" class="field-input calendar-input hasDatepicker" placeholder="Check out" type="text">
+												</div>
+												<div class="form-field field-select col-md-6">
+													<div class="select">
+														<span>2 guest</span>
+														<select>
+															<option>1 guest</option>
+															<option selected="selected">2 guest</option>
+															<option>3 guest</option>
+															<option>4 guest</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-submit col-md-12">
+													<button type="submit" class="awe-btn awe-btn-medium awe-search">Search</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- End Search Form Sidebar -->
+									<!-- Narrow your results -->
+									<div class="narrow-results">
+										<h6>Narrow your results</h6>
+										<div class="narrow-form">
+											<form action="action" method="get">
+												<input name="" class="narrow-input" placeholder="Property name contains:" type="text">
+												<button class="submit-narrow"></button>
+											</form>
+										</div>
+									</div>
+									<!-- End Narrow your results -->
+									<!-- Star rating-->
+									<div class="widget-sidebar start-rating-sidebar">
+										<h4 class="title-sidebar">Star rating</h4>
+										<ul class="widget-rate">
+											<li>
+												<div class="radio-checkbox">
+													<input id="rating-5" class="checkbox" type="checkbox">
+													<label for="rating-5"></label>
+												</div>
+												<div class="group-star">
+													<i class="glyphicon glyphicon-star"></i>
+													<i class="glyphicon glyphicon-star"></i>
+													<i class="glyphicon glyphicon-star"></i>
+													<i class="glyphicon glyphicon-star"></i>
+													<i class="glyphicon glyphicon-star"></i>
+												</div>
+												5 Stars
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="rating-4" class="checkbox" type="checkbox">
+													<label for="rating-4"></label>
+												</div>
+												<div class="group-star">
+													<i class="glyphicon glyphicon-star"></i>
+													<i class="glyphicon glyphicon-star"></i>
+													<i class="glyphicon glyphicon-star"></i>
+													<i class="glyphicon glyphicon-star"></i>
+												</div>
+												4 Stars
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="rating-3" class="checkbox" type="checkbox">
+													<label for="rating-3"></label>
+												</div>
+												<div class="group-star">
+													<i class="glyphicon glyphicon-star"></i>
+													<i class="glyphicon glyphicon-star"></i>
+													<i class="glyphicon glyphicon-star"></i>
+												</div>
+												3 Stars
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="rating-2" class="checkbox" type="checkbox">
+													<label for="rating-2"></label>
+												</div>
+												<div class="group-star">
+													<i class="glyphicon glyphicon-star"></i>
+													<i class="glyphicon glyphicon-star"></i>
+												</div>
+												2 Stars
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="rating-1" class="checkbox" type="checkbox">
+													<label for="rating-1"></label>
+												</div>
+												<div class="group-star">
+													<i class="glyphicon glyphicon-star"></i>
+												</div>
+												1 Stars
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="rating-6" class="checkbox" type="checkbox">
+													<label for="rating-6"></label>
+												</div>
+												<div class="group-star">
+													<i class="glyphicon glyphicon-star-empty"></i>
+												</div>
+												Not Rated
+												<span>12</span>
+											</li>
+										</ul>
+									</div>
+									<!-- End Star rating -->
+									<!-- Price Slider -->
+									<div class="widget-sidebar price-slider-sidebar">
+										<h4 class="title-sidebar">Price <span>(per night)</span></h4>
+										<div class="slider-sidebar price-slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+											<label class="label-min">$0</label>
+											<input name="price" class="range" value="0,1500" type="text">
+											<div style="left: 0%; width: 100%;" class="ui-slider-range ui-widget-header ui-corner-all"></div>
+											<span style="left: 0%;" class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span><span style="left: 100%;" class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span><label class="label-max">$1500</label>
+										</div>
+									</div>
+									<!-- End Price Slider -->
+									<!-- Hotel facilities -->
+									<div class="widget-sidebar facilities-sidebar">
+										<h4 class="title-sidebar">Hotel facilities</h4>
+										<ul class="widget-ul">
+											<li>
+												<div class="radio-checkbox">
+													<input id="facilities-1" class="checkbox" type="checkbox">
+													<label for="facilities-1">Swimming Pool</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="facilities-2" class="checkbox" checked="checked" type="checkbox">
+													<label for="facilities-2">Gym/Fitness</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="facilities-3" class="checkbox" type="checkbox">
+													<label for="facilities-3">Car Park</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="facilities-4" class="checkbox" type="checkbox">
+													<label for="facilities-4">Spa/Sauna</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="facilities-5" class="checkbox" type="checkbox">
+													<label for="facilities-5">Casino</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="facilities-6" class="checkbox" type="checkbox">
+													<label for="facilities-6">Free Wifi</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="facilities-7" class="checkbox" type="checkbox">
+													<label for="facilities-7">Pet-friendly</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="facilities-8" class="checkbox" type="checkbox">
+													<label for="facilities-8">Airport Transfer</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="facilities-9" class="checkbox" type="checkbox">
+													<label for="facilities-9">Smoking Area</label>
+												</div>
+												<span>12</span>
+											</li>
+										</ul>
+									</div>
+									<!-- End Hotel facilities -->
+									<!-- Area -->
+									<div class="widget-sidebar area-sidebar">
+										<h4 class="title-sidebar">Area</h4>
+										<ul class="widget-ul">
+											<li>
+												<div class="radio-checkbox">
+													<input id="area-1" class="checkbox" type="checkbox">
+													<label for="area-1">Earls Court</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="area-2" class="checkbox" checked="checked" type="checkbox">
+													<label for="area-2">Victoria and Westminster</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="area-3" class="checkbox" type="checkbox">
+													<label for="area-3">Bloomsbury - Fitzrovia</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="area-4" class="checkbox" type="checkbox">
+													<label for="area-4">West End -Soho</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="area-5" class="checkbox" type="checkbox">
+													<label for="area-5">Chelsea - Kensington</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="area-6" class="checkbox" type="checkbox">
+													<label for="area-6">Heathrow &amp; Nearby</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="area-7" class="checkbox" type="checkbox">
+													<label for="area-7">Gatwick Airport &amp; Nearby</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="area-8" class="checkbox" type="checkbox">
+													<label for="area-8">Heathrow &amp; Nearby</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="area-9" class="checkbox" type="checkbox">
+													<label for="area-9">The City</label>
+												</div>
+												<span>12</span>
+											</li>
+											<li>
+												<div class="radio-checkbox">
+													<input id="area-10" class="checkbox" type="checkbox">
+													<label for="area-10">Greenwich</label>
+												</div>
+												<span>12</span>
+											</li>
+										</ul>
+									</div>
+									<!-- End Area -->
+								</div>
+								<!-- End Sidebar Content -->
+							</div>
+							<!-- End Sidebar Hotel -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Main -->
+			<!-- Footer -->
+			<footer>
+				<div class="container">
+					<div class="row">
+						<!-- Logo -->
+						<div class="col-md-4">
+							<div class="logo-foter">
+								<a href="index.html" title=""><img src="images/logo-footer.png" alt=""></a>
+							</div>
+						</div>
+						<!-- End Logo -->
+						<!-- Navigation Footer -->
+						<div class="col-xs-6 col-sm-3 col-md-2">
+							<div class="ul-ft">
+								<ul>
+									<li><a href="about.html" title="">About</a></li>
+									<li><a href="blog.html" title="">Blog</a></li>
+									<li><a href="fqa.html" title="">FQA</a></li>
+									<li><a href="careers.html" title="">Carrers</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Navigation Footer -->
+						<!-- Navigation Footer -->
+						<div class="col-xs-6 col-sm-3 col-md-2">
+							<div class="ul-ft">
+								<ul>
+									<li><a href="contact.html" title="">Contact Us</a></li>
+									<li><a href="#" title="">Privacy Policy</a></li>
+									<li><a href="#" title="">Term of Service</a></li>
+									<li><a href="#" title="">Security</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Navigation Footer -->
+						<!-- Footer Currency, Language -->
+						<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4">
+							<!-- Language -->
+							<div class="currency-lang-bottom dropdown-cn float-left">
+								<div class="dropdown-head">English
+									<span class="angle-down"><i class="fa fa-angle-down"></i></span>
+								</div>
+								<div class="dropdown-body">
+									<ul>
+										<li class="current"><a href="#" title="">English</a></li>
+										<li><a href="#" title="">Bahasa Melayu</a></li>
+										<li><a href="#" title="">Català</a></li>
+										<li><a href="#" title="">Dansk</a></li>
+										<li><a href="#" title="">Deutsch</a></li>
+										<li><a href="#" title="">Francais</a></li>
+										<li><a href="#" title="">Italiano</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- End Language -->
+							<!-- Currency -->
+							<div class="currency-lang-bottom dropdown-cn float-left">
+								<div class="dropdown-head">US
+									<span class="angle-down"><i class="fa fa-angle-down"></i></span>
+								</div>
+								<div class="dropdown-body">
+									<ul>
+										<li class="current"><a href="#" title="">US</a></li>
+										<li><a href="#" title="">ARS</a></li>
+										<li><a href="#" title="">ADU</a></li>
+										<li><a href="#" title="">CAD</a></li>
+										<li><a href="#" title="">CHF</a></li>
+										<li><a href="#" title="">CNY</a></li>
+										<li><a href="#" title="">CZK</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- End Currency -->
+							<!--CopyRight-->
+							<p class="copyright">
+								© 2009 – 2014 Bookyourtrip™ All rights reserved.
+							</p>
+							<!--CopyRight-->
+						</div>
+						<!-- End Footer Currency, Language -->
+					</div>
+				</div>
+			</footer>
+			<!-- End Footer -->
+		</div>
+		<!-- Library JS -->
+		<script type="text/javascript" src="js/jquery-1.js"></script>
+		<script type="text/javascript" src="js/js"></script><script src="js/main.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/owl.js"></script>
+		<script type="text/javascript" src="js/parallax.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery_002.js"></script>
+		<script type="text/javascript" src="js/SmoothScroll.js"></script>
+		<!-- End Library JS -->
+		<!-- Main Js -->
+		<script type="text/javascript" src="js/script.js"></script>
+		<!-- End Main Js -->
+		<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+	</body>
+</html>
